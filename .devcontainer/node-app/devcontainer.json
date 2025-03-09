@@ -1,0 +1,18 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "node-app",
+	"dockerComposeFile": "../docker-compose.yaml",
+	"service": "node-app",
+	"shutdownAction": "none",
+	"workspaceFolder": "/workspace/node-app",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Vue.volar",
+				"vitest.explorer",
+				"ms-playwright.playwright"
+			]
+		}
+	}
+}
