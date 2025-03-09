@@ -1,0 +1,1 @@
+VITE_DEV_PROXY_URL=http://localhost:8000 npm run dev

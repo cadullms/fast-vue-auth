@@ -1,12 +1,12 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "py-api",
+	"name": "fast-vue-auth-app-api",
 	
 	"dockerComposeFile": "../docker-compose.yaml",
-	"service": "py-api",
+	"service": "app-api",
 	"shutdownAction": "none",
-    "workspaceFolder": "/workspace/py-api"
+    "workspaceFolder": "/workspace/app-api"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},

@@ -1,11 +1,11 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "node-app",
+	"name": "fast-vue-auth-app-ui",
 	"dockerComposeFile": "../docker-compose.yaml",
-	"service": "node-app",
+	"service": "app-ui",
 	"shutdownAction": "none",
-	"workspaceFolder": "/workspace/node-app",
+	"workspaceFolder": "/workspace/app-ui",
 	"customizations": {
 		"vscode": {
 			"extensions": [

@@ -1,0 +1,1 @@
+VITE_DEV_PROXY_URL=http://app-api:8000 npm run dev
