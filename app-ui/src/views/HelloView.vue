@@ -6,7 +6,16 @@ const message = ref('')
 
 onMounted(async () => {
   try {
-    const response = await axios.get('/api/hello')
+    console.log('Fetching message now from API...')
+    const response = await axios.get('/api/hello',
+      {
+        withCredentials: true,
+        headers: {
+          'Access-Control-Allow-Origin': 'http://127.0.0.1:5173'
+        }
+      })
+    console.log(`Got return code ${response.status} from API...`)
+    console.log(`Got text ${response.data} from API...`)
     message.value = response.data.message
   } catch (error) {
     console.error('Error fetching message:', error)

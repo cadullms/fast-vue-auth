@@ -25,6 +25,7 @@ export default defineConfig({
         // See run-dev.sh and run-dev-without-container.sh scripts
         target: process.env.VITE_DEV_PROXY_URL ? process.env.VITE_DEV_PROXY_URL : 'http://localhost:8000', 
         changeOrigin: true, // Ensure the request appears to come from the frontend server
+        secure: false, // If the target is HTTPS, set this to true
         // rewrite: (path) => path.replace(/^\/api/, ''), // Optional: Remove '/api' prefix
       },
     },
